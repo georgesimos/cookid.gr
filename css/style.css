@@ -1,17 +1,33 @@
-html,
+
+ html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+:root {
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-}
-
-body {
   background: url('../images/soon_1920x1080.jpg') no-repeat center center fixed;  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 100%;
 }
